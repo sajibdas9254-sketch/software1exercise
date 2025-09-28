@@ -1,6 +1,7 @@
 import random
-
-digit3 = [random.randint(0, 9) for i in range(3)]
-digit4 = [random.randint(1, 6) for i in range(4)]
-print("3-digit lock combination (0–9):",digit3)
-print("4-digit lock combination (1–6):",digit4)
+three_digit_code=(random.randint(0,9)),(random.randint(0,9)),(random.randint(0,9))
+four_digit_code=[(random.randint(1,6)),(random.randint(1,6)),(random.randint(1,6)),(random.randint(1,6))]
+three_str=''.join(map(str, three_digit_code))
+four_str=''.join(map(str, four_digit_code))
+print("3-digit code: "+three_str)
+print("4-digit code: "+four_str)

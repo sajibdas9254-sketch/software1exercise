@@ -1,16 +1,17 @@
-c_name = "muath"
-c_password = "muathbestteacher"
-attempt = 0
-max_attempt = 5
-while attempt < max_attempt:
-    username = input("Enter username: ")
-    password = input("Enter password: ")
-
-    if username == c_name and password == c_password:
-        print("Welcome!")
+# set the username and password to check later
+cu = "python"
+cp = "rules"
+# set the value of i before entering the while loop
+i = 1
+while i <= 5:
+    uname = input("Enter username: ")
+    psw = input("Enter password: ")
+    if (uname == cu) and (psw == cp):
+        print("Welcome")
         break
     else:
-        attempt += 1
-        print(f"wrong credentials. Attempts left: {max_attempt - attempt}")
-else:
-    print("Access denied.")
+        if (i >= 5):
+            print("Access denied")
+            break
+        print("Incorrect username or password. Please try again.")
+        i = i + 1

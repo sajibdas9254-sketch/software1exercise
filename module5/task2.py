@@ -1,14 +1,17 @@
-numbers = []
-while True:
-    entry = input("Enter a number (or press Enter to quit): ")
-    if entry == "":
-        break
-    else:
-        try:
-            numbers.append(int(entry))
-        except ValueError:
-            print("Please enter a valid number.")
-numbers.sort(reverse=True)
-print("Five greatest numbers (in descending order):")
-for i in range(min(5, len(numbers))):
-    print(numbers[i])
+# Taking the inputs and storing the values in the list
+number = input("Enter a number: ")
+numberlist = []
+while number != "":
+    number = float(number)
+    numberlist.append(number)
+    number = input("Enter a number: ")
+# Sorting
+numberlist.sort(reverse=True)
+print("The greatest numbers in descending order:")
+#conditions if inputs are less than 5 numbers or more
+if len(numberlist)<5:
+    for i in numberlist:
+        print(i)
+else:
+    for j in range(0,5):
+        print(numberlist[j])

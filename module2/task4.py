@@ -1,9 +1,9 @@
-n1=int(input("1st number:"))
-n2=int(input("2nd number:"))
-n3=int(input("3rd number:"))
-sum=n1+n2+n3
-product=n1*n2*n3
-avarage=product/3
-print(f"sum of 3 numbers:{sum}")
-print(f"product of 3 numbers:{product}")
-print(f"avarage of 3 numbers:{avarage}")
+num1=int(input("Enter the first integer: "))
+num2=int(input("Enter the second integer: "))
+num3=int(input("Enter the third integer: "))
+sum_of_numbers=num1+num2+num3
+product_of_numbers=num1*num2*num3
+average_of_numbers=(num1+num2+num3)/3
+print(f"The sum of the numbers: {sum_of_numbers}")
+print(f"The product of the numbers: {product_of_numbers}")
+print(f"The average of the numbers: {average_of_numbers}")

@@ -1,9 +1,12 @@
 import random
-
-num_dice = int(input("How many dice do you want to roll: "))
-total = 0
-for i in range(num_dice):
-    roll = random.randint(1, 6)
-    print(f"Die {i+1}: {roll}")
-    total += roll
-print("Total sum of dice:", total)
+rolls = int(input("How many dice to roll: "))
+#make a list to store values to add later
+total_rolls = []
+#run this loop the times user said
+for i in range(rolls):
+    a = random.randint(1,6)
+    #add the value you get in a to list total_rolls by using append
+    total_rolls.append(a)
+#print(total_rolls)
+result = sum(total_rolls)
+print(f"Sum of the dice: {result}")

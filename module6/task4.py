@@ -1,10 +1,8 @@
-def sum_list(numbers):
+def sum_of_list(integers):
     total = 0
-    for num in numbers:
-        total += num
+    for i in integers:
+        total = i + total
     return total
-def main():
-    my_numbers = [3, 7, 2, 10, 5]
-    result = sum_list(my_numbers)
-    print("sum of the list:", result)
-main()
+nums = [5 , 5, 5]
+sum = sum_of_list(nums)
+print(f"The sum of the numbers in the list is: {sum}")

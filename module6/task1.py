@@ -1,10 +1,12 @@
 import random
-
 def roll_dice():
-    return random.randint(1, 6)
-def main():
-    result = 0
-    while result != 6:
-        result = roll_dice()
-        print("You rolled:", result)
-main()
+    num = random.randint(1,6)
+    return num
+rolled = roll_dice()
+store = []
+while rolled != 6:
+    store.append(rolled)
+    rolled = roll_dice()
+store.append(rolled)
+for i in store:
+    print(i)

@@ -1,14 +1,12 @@
-s
-def gallons_to_liters(gallons):
-    liters = gallons * 3.78541
-    return liters
-def main():
-    while True:
-        gallons = float(input("Enter volume in gallons: "))
-        if gallons < 0:
-            print("Exiting the program.")
-            break
-        liters = gallons_to_liters(gallons)
-        print(f"{gallons} gallons is equal to {liters:.2f} liters.\n")
-
-main()
+def gallons_to_liters(volume):
+    lit = volume * 3.785
+    return lit
+prompt = "Enter a volume in American gallons (negative value to quit): "
+user = int(input(prompt))
+while True:
+    if user < 0:
+        print("Program finished.")
+        break
+    converted = gallons_to_liters(user)
+    print(f"{user:0.1f} American gallons is {converted:0.2f} liters.")
+    user = float(input(prompt))

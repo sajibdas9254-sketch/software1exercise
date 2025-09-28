@@ -1,14 +1,11 @@
-def remove_odd_numbers(numbers):
-    new_list = []
-    for num in numbers:
-        if num % 2 == 0:
-            new_list.append(num)
-    return new_list
-def main():
-    original_list = [1, 4, 7, 10, 15, 20, 23]
-    filtered_list = remove_odd_numbers(original_list)
+def filter_even_numbers(integers):
+    even = []
+    for i in integers:
+        if i % 2 == 0:
+            even.append(i)
+    return even
 
-    print("Original list:", original_list)
-    print("List with odd numbers removed:", filtered_list)
-
-main()
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+evn = filter_even_numbers(nums)
+print(f"Original list: {nums}")
+print(f"List with even numbers only: {evn}")
