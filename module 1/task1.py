@@ -1,2 +1,3 @@
-name = "Viivi Virta"
-print(f"Hello, {name}!")
+name = input("Give name: ")
+greeting= (f"Hello, {name}!")
+print(greeting)

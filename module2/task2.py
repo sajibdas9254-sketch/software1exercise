@@ -1,3 +1,4 @@
-radius=int(input("radius of a circle:"))
-area=radius*(3.14159)**2
-print(area)
+import math
+radius=float(input("Enter the radius of the circle: "))
+area= math.pi*radius**2
+print(f"The area of the circle is {area}")
